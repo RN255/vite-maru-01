@@ -109,7 +109,123 @@ export default function Home() {
             </Card>
           </Col>
         </Row>
+        <Row className="my-5">
+          <Col className="text-center">
+            <i class="bi bi-browser-edge text-light custom-card-icon-large"></i>
+            <h3 className="fs-1 text-gradient-purple">
+              A new foundation to build on
+            </h3>
+          </Col>
+        </Row>
+        <Row className="black-bg">
+          <Col lg="6" className="mb-4">
+            <Card className="custom-dark-card">
+              <Card.Body className="text-light">
+                <blockquote className="blockquote mb-4 p-3 rounded blockquote-custom-green">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer posuere erat a ante.
+                  </p>
+                  <footer className="blockquote-footer">
+                    Someone famous in{" "}
+                    <cite title="Source Title">Source Title</cite>
+                  </footer>
+                </blockquote>
+                <Card.Title>This is some text within a card body.</Card.Title>
+                <Card.Text className="text-secondary">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col className="mb-4">
+            <Card className="custom-dark-card">
+              <Card.Body className="text-light">
+                <blockquote className="blockquote mb-4 p-3 rounded blockquote-custom-blue h-50">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer posuere erat a ante.
+                  </p>
+                  <footer className="blockquote-footer text-light">
+                    Someone famous in{" "}
+                    <cite title="Source Title">Source Title</cite>
+                  </footer>
+                </blockquote>
+                <Card.Title className="text-center">
+                  This is some text within a card body.
+                </Card.Title>
+                <Card.Text className="text-secondary text-center">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        <Row className="black-bg">
+          <Col lg="6" className="mb-4">
+            <Card className="custom-dark-card h-100">
+              <Card.Body className="text-light align-content-center">
+                <div className="d-flex justify-content-around mb-4">
+                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                </div>
+                <Card.Title className="text-center">
+                  This is some text within a card body.
+                </Card.Title>
+                <Card.Text className="text-secondary text-center">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col className="mb-4">
+            <Card className="custom-dark-card">
+              <Card.Body className="text-light text-center">
+                <i class="bi bi-browser-edge custom-card-icon-large"></i>
+                <Card.Title className="text-center">
+                  This is some text within a card body.
+                </Card.Title>
+                <Card.Text className="text-secondary text-center">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
       </Container>
+      <Row className="my-5">
+        <Col className="text-center">
+          <h3 className="text-light fs-1">
+            Powering your favourite frameworks and tools
+          </h3>
+        </Col>
+      </Row>
+      <Row className="mb-4">
+        <Col className="text-light d-flex move-left justify-content-center">
+          <i class="bi bi-browser-edge text-black rounded icon-custom-border-styling me-4"></i>
+          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i class="bi bi-browser-edge text-black rounded icon-custom-border-styling"></i>
+        </Col>
+      </Row>
+      <Row>
+        <Col className="text-light d-flex move-right justify-content-center">
+          <i class="bi bi-browser-edge text-black rounded icon-custom-border-styling me-4"></i>
+          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i class="bi bi-browser-edge text-black rounded icon-custom-border-styling"></i>
+        </Col>
+      </Row>
     </Container>
   );
 }
