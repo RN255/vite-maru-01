@@ -1,0 +1,31 @@
+Install vite
+
+Install react bootstrap
+
+Clear App.css and Index.css - We're using bootstrap now
+
+Create components folder
+    Add a navbar
+    Use "rfc" to create boilerplate
+
+Create a pages folder
+    Why not create a Home.jsx page?
+
+Use react
+    className="container" - and so on...
+
+Instal React Router Dom
+    npm install react-router-dom
+    Put the wrapper in main.jsx
+    Add routes to app.jsx
+
+
+Vite layout
+    Keep main.jsx tiny
+        Browser router wrapping (only) will go in here at some point
+    App.jsx should be high level structure
+        Routes will go in here
+
+### NEXT STEPS ###
+- Learn come basic markdown
+- Is the navbar in the right place or should it go somewhere else?
