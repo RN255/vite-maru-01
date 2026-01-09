@@ -25,7 +25,24 @@ Vite layout
         Browser router wrapping (only) will go in here at some point
     App.jsx should be high level structure
         Routes will go in here
+        Global components like NavBar will go in here
+
+Import a font from google fonts
+use @import and then *{} in css file
+
+Customise your buttons
+    Create custom css
+
+Import some icons
+    follow instructions for bootstrap instructions
+    gpt will help you will referencing it in the css file
+
+
+
+
+
+
+
 
 ### NEXT STEPS ###
-- Learn come basic markdown
 - Is the navbar in the right place or should it go somewhere else?
