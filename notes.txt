@@ -37,7 +37,8 @@ Import some icons
     follow instructions for bootstrap instructions
     gpt will help you will referencing it in the css file
 
-
+Get your site running again with
+    npm run dev
 
 
 

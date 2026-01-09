@@ -1,11 +1,12 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
 export default function Home() {
   return (
-    <div className="container-fluid">
-      <div className="row text-light p-5 min-vh-100" id="hero">
-        <div className="col text-center">
+    <Container fluid className="black-bg">
+      <Row className="text-light p-5 min-vh-100" id="hero">
+        <Col className="text-center">
           <Button variant="outline" className="rounded-pill mt-5 purple-button">
             <i class="bi bi-fingerprint me-2"></i>Primary 2026 More
           </Button>
@@ -17,16 +18,98 @@ export default function Home() {
           </h2>
           <div className="mt-5">
             <Button className="me-2 purple-gradient-button">Button 1</Button>
-            <Button
-              className="ms-2 outline-home-button"
-              variant="outline-light"
-            >
-              Button 2
-            </Button>
+            <Button className="ms-2 outline-home-button">Button 2</Button>
           </div>
           <i class="bi bi-browser-edge larger-icon"></i>
-        </div>
-      </div>
-    </div>
+          <h2 className="two-text blue-white-text-gradient">
+            Redefining your experiences
+          </h2>
+          <h3 className="fs-4">We are trying to make this simple again</h3>
+        </Col>
+      </Row>
+      <Container>
+        <Row className="black-bg">
+          <Col lg="6" className="mb-4">
+            <Card className="custom-dark-card">
+              <Card.Body className="text-light">
+                <blockquote className="blockquote mb-4 p-3 rounded blockquote-custom-green">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer posuere erat a ante.
+                  </p>
+                  <footer className="blockquote-footer">
+                    Someone famous in{" "}
+                    <cite title="Source Title">Source Title</cite>
+                  </footer>
+                </blockquote>
+                <Card.Title>This is some text within a card body.</Card.Title>
+                <Card.Text className="text-secondary">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col className="mb-4">
+            <Card className="custom-dark-card">
+              <Card.Body className="text-light">
+                <blockquote className="blockquote mb-4 p-3 rounded blockquote-custom-blue h-50">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer posuere erat a ante.
+                  </p>
+                  <footer className="blockquote-footer text-light">
+                    Someone famous in{" "}
+                    <cite title="Source Title">Source Title</cite>
+                  </footer>
+                </blockquote>
+                <Card.Title className="text-center">
+                  This is some text within a card body.
+                </Card.Title>
+                <Card.Text className="text-secondary text-center">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        <Row className="black-bg">
+          <Col lg="6" className="mb-4">
+            <Card className="custom-dark-card h-100">
+              <Card.Body className="text-light align-content-center">
+                <div className="d-flex justify-content-around mb-4">
+                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                </div>
+                <Card.Title className="text-center">
+                  This is some text within a card body.
+                </Card.Title>
+                <Card.Text className="text-secondary text-center">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col className="mb-4">
+            <Card className="custom-dark-card">
+              <Card.Body className="text-light text-center">
+                <i class="bi bi-browser-edge custom-card-icon-large"></i>
+                <Card.Title className="text-center">
+                  This is some text within a card body.
+                </Card.Title>
+                <Card.Text className="text-secondary text-center">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </Container>
   );
 }
