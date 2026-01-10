@@ -15,6 +15,10 @@
   );
 }
 
+body {
+  background: #000 !important;
+}
+
 .black-bg {
   background: #000 !important;
 }
@@ -172,4 +176,8 @@
 .move-right {
   /* transform: translateX(40px); */
   overflow-x: hidden;
+}
+
+.bottom-border-faded {
+  border-bottom: 1px rgb(255, 255, 255, 0.2) solid;
 }
