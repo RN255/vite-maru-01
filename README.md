@@ -4,7 +4,7 @@ I wanted to make a new frontend using Vite. I created a page based on the Vite h
 
 ## How to use
 
-Can be viewed on GitHub Pages: https://vite-maru-01.vercel.app/
+Can be viewed on Vercel: https://vite-maru-01.vercel.app/
 
 ## Screenshots
 ![Vite Maru screenshot](https://github.com/RN255/vite-maru-01/blob/main/src/assets/Screenshot%202026-01-10%20150515.jpg)
