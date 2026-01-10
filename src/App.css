@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+/* basic settings  */
 * {
   font-family: "Manrope", sans-serif;
 }
@@ -19,6 +20,7 @@ body {
   background: #000 !important;
 }
 
+/* basic values */
 .black-bg {
   background: #000 !important;
 }
@@ -104,11 +106,14 @@ body {
   background-color: rgba(13, 110, 253, 0.02) !important;
 }
 
+/* hero icon  */
 .larger-icon {
   display: block;
   margin-top: 100px !important;
   margin-bottom: 100px !important;
   font-size: 150px;
+  box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.4);
+  padding: 0 50px;
 }
 
 /* blue to white gradient for h1 home font  */
@@ -178,6 +183,18 @@ body {
   overflow-x: hidden;
 }
 
+/* footer */
+
 .bottom-border-faded {
   border-bottom: 1px rgb(255, 255, 255, 0.2) solid;
+}
+
+/* nav bar  */
+
+.custom-navbar {
+  border: none;
+}
+
+.custom-navbar:focus {
+  box-shadow: none;
 }

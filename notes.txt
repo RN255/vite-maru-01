@@ -40,6 +40,23 @@ Import some icons
 Get your site running again with
     npm run dev
 
+Let's make some links
+    if you’re using React Router:
+        <Button as={Link} to="/about">About</Button>
+            And import Link at top
+
+If react bootstrap components look bad, you might have to state you're in dark mode
+    <div data-bs-theme="dark">
+      <Alert variant="danger">
+        <Alert.Heading>Important Note</Alert.Heading>
+          <p>Some info that's really important.</p>
+      </Alert>
+    </div>
+
+
+
+
+
 
 
 

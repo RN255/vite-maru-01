@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { Container, Row, Col, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -11,16 +12,22 @@ export default function Home() {
             <i class="bi bi-fingerprint me-2"></i>Primary 2026 More
           </Button>
           <h1 className="mt-5 twoPointFive-text text-gradient fw-bolder">
-            The Main Title<br></br>for the Weeb
+            The Main Title<br></br>for the Web
           </h1>
           <h2 className="mt-4 fs-4 text-secondary">
             The subtitle for the main title
           </h2>
           <div className="mt-5">
-            <Button className="me-2 purple-gradient-button">Button 1</Button>
+            <Button
+              className="me-2 purple-gradient-button"
+              as={Link}
+              to="/content1"
+            >
+              Content 1
+            </Button>
             <Button className="ms-2 outline-home-button">Button 2</Button>
           </div>
-          <i class="bi bi-browser-edge larger-icon"></i>
+          <i class="bi bi-browser-edge larger-icon d-inline-block"></i>
           <h2 className="two-text blue-white-text-gradient">
             Redefining your experiences
           </h2>
