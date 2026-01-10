@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <Container fluid className="black-bg">
+    <Container fluid className="black-bg overflow-x-hidden">
       <Row className="text-light p-5 min-vh-100" id="hero">
         <Col className="text-center">
           <Button variant="outline" className="rounded-pill mt-5 purple-button">
-            <i class="bi bi-fingerprint me-2"></i>Primary 2026 More
+            <i className="bi bi-fingerprint me-2"></i>Primary 2026 More
           </Button>
           <h1 className="mt-5 twoPointFive-text text-gradient fw-bolder">
             The Main Title<br></br>for the Web
@@ -27,7 +27,13 @@ export default function Home() {
             </Button>
             <Button className="ms-2 outline-home-button">Button 2</Button>
           </div>
-          <i class="bi bi-browser-edge larger-icon d-inline-block"></i>
+          <div className="relative">
+            <i className="bi bi-browser-edge larger-icon d-inline-block relative z2"></i>
+            <div className="animate-laser1"></div>
+            <div className="animate-laser2"></div>
+            <div className="animate-laser3"></div>
+            <div className="animate-laser4"></div>
+          </div>
           <h2 className="two-text blue-white-text-gradient">
             Redefining your experiences
           </h2>
@@ -86,10 +92,10 @@ export default function Home() {
             <Card className="custom-dark-card h-100">
               <Card.Body className="text-light align-content-center">
                 <div className="d-flex justify-content-around mb-4">
-                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
-                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
-                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
-                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i className="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i className="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i className="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i className="bi bi-browser-edge rounded icon-custom-border-styling"></i>
                 </div>
                 <Card.Title className="text-center">
                   This is some text within a card body.
@@ -104,7 +110,7 @@ export default function Home() {
           <Col className="mb-4">
             <Card className="custom-dark-card">
               <Card.Body className="text-light text-center">
-                <i class="bi bi-browser-edge custom-card-icon-large"></i>
+                <i className="bi bi-browser-edge custom-card-icon-large"></i>
                 <Card.Title className="text-center">
                   This is some text within a card body.
                 </Card.Title>
@@ -118,7 +124,7 @@ export default function Home() {
         </Row>
         <Row className="my-5">
           <Col className="text-center">
-            <i class="bi bi-browser-edge text-light custom-card-icon-large"></i>
+            <i className="bi bi-browser-edge text-light custom-card-icon-large"></i>
             <h3 className="fs-1 text-gradient-purple">
               A new foundation to build on
             </h3>
@@ -175,10 +181,10 @@ export default function Home() {
             <Card className="custom-dark-card h-100">
               <Card.Body className="text-light align-content-center">
                 <div className="d-flex justify-content-around mb-4">
-                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
-                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
-                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
-                  <i class="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i className="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i className="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i className="bi bi-browser-edge rounded icon-custom-border-styling"></i>
+                  <i className="bi bi-browser-edge rounded icon-custom-border-styling"></i>
                 </div>
                 <Card.Title className="text-center">
                   This is some text within a card body.
@@ -193,7 +199,7 @@ export default function Home() {
           <Col className="mb-4">
             <Card className="custom-dark-card">
               <Card.Body className="text-light text-center">
-                <i class="bi bi-browser-edge custom-card-icon-large"></i>
+                <i className="bi bi-browser-edge custom-card-icon-large"></i>
                 <Card.Title className="text-center">
                   This is some text within a card body.
                 </Card.Title>
@@ -215,22 +221,22 @@ export default function Home() {
       </Row>
       <Row className="mb-4">
         <Col className="text-light d-flex move-left justify-content-center">
-          <i class="bi bi-browser-edge text-black rounded icon-custom-border-styling me-4"></i>
-          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i class="bi bi-browser-edge text-black rounded icon-custom-border-styling"></i>
+          <i className="bi bi-browser-edge text-black rounded icon-custom-border-styling me-4"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i className="bi bi-browser-edge text-black rounded icon-custom-border-styling"></i>
         </Col>
       </Row>
       <Row>
         <Col className="text-light d-flex move-right justify-content-center">
-          <i class="bi bi-browser-edge text-black rounded icon-custom-border-styling me-4"></i>
-          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i class="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i class="bi bi-browser-edge text-black rounded icon-custom-border-styling"></i>
+          <i className="bi bi-browser-edge text-black rounded icon-custom-border-styling me-4"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i className="bi bi-browser-edge text-black rounded icon-custom-border-styling"></i>
         </Col>
       </Row>
     </Container>
