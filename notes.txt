@@ -53,6 +53,12 @@ If react bootstrap components look bad, you might have to state you're in dark m
       </Alert>
     </div>
 
+### If you're going to update - you've done to here ###
+
+Add some lasers
+    Use keyframes
+    Use relative for parent and element above, absolute for element underneath
+    set the z-index to correct level
 
 
 
