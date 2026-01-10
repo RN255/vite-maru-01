@@ -1,92 +1,138 @@
 import React from "react";
-import { Container, Row, Col, Alert, Accordion } from "react-bootstrap";
+import { Container, Row, Col, Alert, Accordion, Table } from "react-bootstrap";
 
 export default function Content1() {
   return (
     <Container fluid>
       <Container className="text-light">
-        <Row>
+        <Row className="mt-5 pb-4 bottom-border-faded">
           <Col>
             <h1>Getting started</h1>
           </Col>
         </Row>
-        <Row>
+        <Row className="mt-4 bottom-border-faded pb-4">
           <Col>
-            <h2>Overview</h2>
-            <p>Some text.</p>
+            <h2 className="mb-4">Overview</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex
+              sapien vitae pellentesque sem placerat in id. Placerat in id
+              cursus mi pretium tellus duis. Pretium tellus duis convallis
+              tempus leo eu aenean.
+            </p>
             <ul>
-              <li>Info 1</li>
-              <li>Info 2</li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor
+                sit amet consectetur adipiscing elit quisque faucibus.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor
+                sit amet consectetur adipiscing elit quisque faucibus.
+              </li>
             </ul>
-            <p>More text.</p>
-            <p>More text.</p>
-            <p>And more text.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex
+              sapien vitae pellentesque sem placerat in id. Placerat in id
+              cursus mi pretium tellus duis. Pretium tellus duis convallis
+              tempus leo eu aenean.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit
+              amet consectetur adipiscing elit quisque faucibus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit
+              amet consectetur adipiscing elit quisque faucibus.
+            </p>
           </Col>
         </Row>
-        <Row>
+        <Row className="mt-4 bottom-border-faded pb-4">
           <Col>
-            <h2>Browser Support</h2>
-            <p>Text</p>
-            <p>Text</p>
+            <h2 className="mb-4">Browser Support</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Adipiscing
+              elit quisque faucibus ex sapien vitae pellentesque. Vitae
+              pellentesque sem placerat in id cursus mi. Cursus mi pretium
+              tellus duis convallis tempus leo. Tempus leo eu aenean sed diam
+              urna tempor. Urna tempor pulvinar vivamus fringilla lacus nec
+              metus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet
+              consectetur adipiscing elit quisque faucibus ex sapien. Quisque
+              faucibus ex sapien vitae pellentesque sem placerat. Vitae
+              pellentesque sem placerat in id cursus mi.
+            </p>
           </Col>
         </Row>
-        <Row>
+        <Row className="mt-4 bottom-border-faded pb-4">
           <Col>
-            <h2>Trying Vite Online</h2>
-            <p>Some text.</p>
-            <p>Some table intro.</p>
-            <table>
-              <thead>
-                <tr>
-                  <th>JavaScript</th>
-                  <th>TypeScript</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>2</td>
-                </tr>
-              </tbody>
-            </table>
+            <h2 className="mb-4">Trying Vite Online</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet
+              consectetur adipiscing elit quisque faucibus ex sapien. Quisque
+              faucibus ex sapien vitae pellentesque sem placerat. Vitae
+              pellentesque sem placerat in id cursus mi.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            <div data-bs-theme="dark">
+              <Table striped className="w-auto my-4">
+                <thead>
+                  <tr>
+                    <th className="text-secondary">JavaScript</th>
+                    <th className="text-secondary">TypeScript</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>25</td>
+                  </tr>
+                </tbody>
+              </Table>
+            </div>
           </Col>
         </Row>
-        <Row>
+        <Row className="mt-4 bottom-border-faded pb-5">
           <Col>
-            <h2>Scaffolding your First Project</h2>
+            <h2 className="mb-4">Scaffolding your First Project</h2>
             <p>Follow the instructions</p>
             <div data-bs-theme="dark">
-              <Alert variant="primary">
+              <Alert variant="primary" className="my-4">
                 <Alert.Heading>Important Note</Alert.Heading>
-                <p>Some info that's really important.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor
+                  sit amet consectetur adipiscing elit quisque faucibus.
+                </p>
               </Alert>
               <Accordion>
                 <Accordion.Item eventKey="0">
@@ -106,11 +152,19 @@ export default function Content1() {
             </div>
           </Col>
         </Row>
-        <Row>
+        <Row className="mt-4 pb-5">
           <Col>
-            <h2>Some final text</h2>
-            <p>Text</p>
-            <p>Text</p>
+            <h2 className="mb-4">Some final text</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet
+              consectetur adipiscing elit quisque faucibus ex. Adipiscing elit
+              quisque faucibus ex sapien vitae pellentesque.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet
+              consectetur adipiscing elit quisque faucibus ex. Adipiscing elit
+              quisque faucibus ex sapien vitae pellentesque.
+            </p>
           </Col>
         </Row>
       </Container>
