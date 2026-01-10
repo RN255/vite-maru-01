@@ -1,16 +1,80 @@
-# React + Vite
+## Project Name: Vite Maru (React Vite Bootstrap)  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I wanted to make a new frontend using Vite. I created a page based on the Vite homepage. 
 
-Currently, two official plugins are available:
+## How to use
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Can be viewed on GitHub Pages: (coming soon)
 
-## React Compiler
+## Screenshots
+![Vite Maru screenshot](https://github.com/RN255/vite-maru-01/blob/main/src/assets/Screenshot%202026-01-10%20150515.jpg)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Motivation
 
-## Expanding the ESLint configuration
+I wanted to make a new frontend using Vite.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech used
+- React
+- Bootstrap
+- Vite
+
+## Project features
+- Fully responsive front page and content page.
+
+## Lessons learnt / development process
+- Install vite
+
+- Install react bootstrap
+
+- Clear App.css and Index.css - We're using bootstrap now
+
+- Create components folder
+    - Add a navbar
+    - Use "rfc" to create boilerplate
+
+- Create a pages folder
+    - Why not create a Home.jsx page?
+
+- Use react
+    - className="container" - and so on...
+
+- Instal React Router Dom
+    - npm install react-router-dom
+    - Put the wrapper in main.jsx
+    - Add routes to app.jsx
+
+- Vite layout
+   -  Keep main.jsx tiny
+        - Browser router wrapping (only) will go in here at some point
+    - App.jsx should be high level structure
+       -  Routes will go in here
+       -  Global components like NavBar will go in here
+
+- Import a font from google fonts
+   -  use @import and then *{} in css file
+
+- Customise your buttons
+    - Create custom css
+
+- Import some icons
+    - follow instructions for bootstrap instructions
+    - gpt will help you will referencing it in the css file
+
+- Get your site running again with
+    - npm run dev
+
+- Let's make some links
+    - if you’re using React Router:
+        - `<Button as={Link} to="/about">About</Button>`
+            - And import Link at top
+
+- If react bootstrap components look bad, you might have to state you're in dark mode
+    - `<div data-bs-theme="dark">`
+       
+    
+
+
+## future development
+- More pages can be added.
+- It needs a real prupose, not just a boilerplate site.
+- Needs some animations.
