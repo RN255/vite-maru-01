@@ -63,7 +63,27 @@ Add some lasers
 Fade in some elements
     Use keyframes and opacity
 
+Fade in box shadow
+    use transition 0.4s ease on element, use :hover to fade in on hover
 
+Reveal elements on scroll using useEffect() and IntersectionObserver
+    Set to hidden in css
+
+### TO ADD ###
+
+Copy the video online
+
+Custom scroll reveal
+More effects on hover
+category filter
+content page should be react styled, not pure black.
+Improve html
+Improve SEO 
+improve analytics
+
+We need this to show some stats...
+    ... 2 birds with one stone. What's it going to be? 
+        Korea? water flossers? Money?
 
 
 

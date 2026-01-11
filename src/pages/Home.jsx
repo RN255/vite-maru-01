@@ -1,9 +1,27 @@
-import React from "react";
+import { useEffect } from "react";
 import { Button } from "react-bootstrap";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default function Home() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.33 }
+    );
+
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <Container fluid className="black-bg overflow-x-hidden">
       <Row className="text-light p-5 min-vh-100" id="hero">
@@ -45,7 +63,7 @@ export default function Home() {
       </Row>
       <Container>
         <Row className="black-bg">
-          <Col lg="6" className="mb-4">
+          <Col lg="6" className="mb-4 reveal reveal-from-left">
             <Card className="custom-dark-card">
               <Card.Body className="text-light">
                 <blockquote className="blockquote mb-4 p-3 rounded blockquote-custom-green">
@@ -66,7 +84,7 @@ export default function Home() {
               </Card.Body>
             </Card>
           </Col>
-          <Col className="mb-4">
+          <Col className="mb-4 reveal reveal-from-right">
             <Card className="custom-dark-card">
               <Card.Body className="text-light">
                 <blockquote className="blockquote mb-4 p-3 rounded blockquote-custom-blue h-50">
@@ -91,7 +109,7 @@ export default function Home() {
           </Col>
         </Row>
         <Row className="black-bg">
-          <Col lg="6" className="mb-4">
+          <Col lg="6" className="mb-4 reveal reveal-from-left">
             <Card className="custom-dark-card h-100">
               <Card.Body className="text-light align-content-center">
                 <div className="d-flex justify-content-around mb-4">
@@ -110,7 +128,7 @@ export default function Home() {
               </Card.Body>
             </Card>
           </Col>
-          <Col className="mb-4">
+          <Col className="mb-4 reveal reveal-from-right">
             <Card className="custom-dark-card">
               <Card.Body className="text-light text-center">
                 <i className="bi bi-browser-edge custom-card-icon-large"></i>
@@ -134,7 +152,7 @@ export default function Home() {
           </Col>
         </Row>
         <Row className="black-bg">
-          <Col lg="6" className="mb-4">
+          <Col lg="6" className="mb-4 reveal reveal-from-left">
             <Card className="custom-dark-card">
               <Card.Body className="text-light">
                 <blockquote className="blockquote mb-4 p-3 rounded blockquote-custom-green">
@@ -155,7 +173,7 @@ export default function Home() {
               </Card.Body>
             </Card>
           </Col>
-          <Col className="mb-4">
+          <Col className="mb-4 reveal reveal-from-right">
             <Card className="custom-dark-card">
               <Card.Body className="text-light">
                 <blockquote className="blockquote mb-4 p-3 rounded blockquote-custom-blue h-50">
@@ -180,7 +198,7 @@ export default function Home() {
           </Col>
         </Row>
         <Row className="black-bg">
-          <Col lg="6" className="mb-4">
+          <Col lg="6" className="mb-4 reveal reveal-from-left">
             <Card className="custom-dark-card h-100">
               <Card.Body className="text-light align-content-center">
                 <div className="d-flex justify-content-around mb-4">
@@ -199,7 +217,7 @@ export default function Home() {
               </Card.Body>
             </Card>
           </Col>
-          <Col className="mb-4">
+          <Col className="mb-4 reveal reveal-from-right">
             <Card className="custom-dark-card">
               <Card.Body className="text-light text-center">
                 <i className="bi bi-browser-edge custom-card-icon-large"></i>
@@ -232,7 +250,7 @@ export default function Home() {
           <i className="bi bi-browser-edge text-black rounded icon-custom-border-styling"></i>
         </Col>
       </Row>
-      <Row>
+      <Row className="pb-5">
         <Col className="text-light d-flex move-right justify-content-center overflow-visible">
           <i className="bi bi-browser-edge text-black rounded icon-custom-border-styling me-4"></i>
           <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4 red-shadow-on-hover"></i>
