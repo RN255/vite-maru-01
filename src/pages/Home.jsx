@@ -64,7 +64,7 @@ export default function Home() {
       <Container>
         <Row className="black-bg">
           <Col lg="6" className="mb-4 reveal reveal-from-left">
-            <Card className="custom-dark-card">
+            <Card className="custom-dark-card white-shadow-hover">
               <Card.Body className="text-light">
                 <blockquote className="blockquote mb-4 p-3 rounded blockquote-custom-green">
                   <p>
@@ -85,7 +85,7 @@ export default function Home() {
             </Card>
           </Col>
           <Col className="mb-4 reveal reveal-from-right">
-            <Card className="custom-dark-card">
+            <Card className="custom-dark-card white-shadow-hover">
               <Card.Body className="text-light">
                 <blockquote className="blockquote mb-4 p-3 rounded blockquote-custom-blue h-50">
                   <p>
@@ -110,7 +110,7 @@ export default function Home() {
         </Row>
         <Row className="black-bg">
           <Col lg="6" className="mb-4 reveal reveal-from-left">
-            <Card className="custom-dark-card h-100">
+            <Card className="custom-dark-card h-100 white-shadow-hover">
               <Card.Body className="text-light align-content-center">
                 <div className="d-flex justify-content-around mb-4">
                   <i className="bi bi-browser-edge rounded icon-custom-border-styling"></i>
@@ -129,7 +129,7 @@ export default function Home() {
             </Card>
           </Col>
           <Col className="mb-4 reveal reveal-from-right">
-            <Card className="custom-dark-card">
+            <Card className="custom-dark-card white-shadow-hover">
               <Card.Body className="text-light text-center">
                 <i className="bi bi-browser-edge custom-card-icon-large"></i>
                 <Card.Title className="text-center">
@@ -153,7 +153,7 @@ export default function Home() {
         </Row>
         <Row className="black-bg">
           <Col lg="6" className="mb-4 reveal reveal-from-left">
-            <Card className="custom-dark-card">
+            <Card className="custom-dark-card white-shadow-hover">
               <Card.Body className="text-light">
                 <blockquote className="blockquote mb-4 p-3 rounded blockquote-custom-green">
                   <p>
@@ -174,7 +174,7 @@ export default function Home() {
             </Card>
           </Col>
           <Col className="mb-4 reveal reveal-from-right">
-            <Card className="custom-dark-card">
+            <Card className="custom-dark-card white-shadow-hover">
               <Card.Body className="text-light">
                 <blockquote className="blockquote mb-4 p-3 rounded blockquote-custom-blue h-50">
                   <p>
@@ -199,7 +199,7 @@ export default function Home() {
         </Row>
         <Row className="black-bg">
           <Col lg="6" className="mb-4 reveal reveal-from-left">
-            <Card className="custom-dark-card h-100">
+            <Card className="custom-dark-card h-100 white-shadow-hover">
               <Card.Body className="text-light align-content-center">
                 <div className="d-flex justify-content-around mb-4">
                   <i className="bi bi-browser-edge rounded icon-custom-border-styling"></i>
@@ -217,8 +217,8 @@ export default function Home() {
               </Card.Body>
             </Card>
           </Col>
-          <Col className="mb-4 reveal reveal-from-right">
-            <Card className="custom-dark-card">
+          <Col className="mb-4 reveal reveal-from-right ">
+            <Card className="custom-dark-card white-shadow-hover">
               <Card.Body className="text-light text-center">
                 <i className="bi bi-browser-edge custom-card-icon-large"></i>
                 <Card.Title className="text-center">

@@ -90,5 +90,3 @@ We need this to show some stats...
 
 
 
-### NEXT STEPS ###
-- Is the navbar in the right place or should it go somewhere else?
