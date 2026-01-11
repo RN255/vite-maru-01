@@ -3,7 +3,15 @@ import { Button } from "react-bootstrap";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Home({ setTheme, setNavbarMode }) {
+  useEffect(() => {
+    setTheme("dark");
+  }, []);
+
+  useEffect(() => {
+    setNavbarMode("black");
+  }, []);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {

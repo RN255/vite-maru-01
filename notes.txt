@@ -69,12 +69,14 @@ Fade in box shadow
 Reveal elements on scroll using useEffect() and IntersectionObserver
     Set to hidden in css
 
+    Control the colour scheme with state in app.jsx 
+        useEffect controls this state when a page is loaded
+        use a mode value to set custom color
+
 ### TO ADD ###
 
 Copy the video online
 
-Custom scroll reveal
-More effects on hover
 category filter
 content page should be react styled, not pure black.
 Improve html

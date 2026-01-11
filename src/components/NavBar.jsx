@@ -4,16 +4,17 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-export default function NavBar() {
+export default function NavBar({ mode }) {
   return (
     <Navbar
       expand="lg"
-      className="black-bg transparent-border"
-      data-bs-theme="dark"
+      className="transparent-border"
+      bg={mode === "black" ? "black" : "body"}
+      data-bs-theme={mode === "dark" ? "dark" : undefined}
     >
       <Container>
-        <Navbar.Brand href="/">
-          <i className="bi bi-bezier me-2"></i>Vite-Maru
+        <Navbar.Brand href="/" >
+          <i className="bi bi-bezier me-2 preset-icon-size"></i>Vite-Maru
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"

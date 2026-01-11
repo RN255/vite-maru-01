@@ -17,7 +17,7 @@
 }
 
 body {
-  background: #000 !important;
+  /* background: #000 !important; */
 }
 
 /* basic values */
@@ -39,6 +39,11 @@ body {
 
 .two-text {
   font-size: 2rem;
+}
+
+.preset-icon-size {
+  width: 25px;
+  display: inline-block;
 }
 
 /* gradient for h1 home font  */
@@ -338,5 +343,4 @@ body {
 
 .white-shadow-hover:hover {
   box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.5);
-
 }

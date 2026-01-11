@@ -1,11 +1,19 @@
-import React from "react";
+import { useEffect } from "react";
 import { Container, Row, Col, Alert, Accordion, Table } from "react-bootstrap";
 
-export default function Content1() {
+export default function Content1({ setTheme, setNavbarMode }) {
+  useEffect(() => {
+    setTheme("dark");
+  }, []);
+
+  useEffect(() => {
+    setNavbarMode("dark");
+  }, []);
+
   return (
     <Container fluid>
-      <Container className="text-light">
-        <Row className="mt-5 pb-4 bottom-border-faded">
+      <Container>
+        <Row className="pt-5 pb-4 bottom-border-faded">
           <Col>
             <h1>Getting started</h1>
           </Col>
