@@ -60,6 +60,8 @@ Add some lasers
     Use relative for parent and element above, absolute for element underneath
     set the z-index to correct levels
 
+Fade in some elements
+    Use keyframes and opacity
 
 
 

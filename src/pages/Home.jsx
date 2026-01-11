@@ -8,16 +8,19 @@ export default function Home() {
     <Container fluid className="black-bg overflow-x-hidden">
       <Row className="text-light p-5 min-vh-100" id="hero">
         <Col className="text-center">
-          <Button variant="outline" className="rounded-pill mt-5 purple-button">
+          <Button
+            variant="outline"
+            className="rounded-pill mt-5 purple-button fade-in-1s"
+          >
             <i className="bi bi-fingerprint me-2"></i>Primary 2026 More
           </Button>
-          <h1 className="mt-5 twoPointFive-text text-gradient fw-bolder">
+          <h1 className="mt-5 twoPointFive-text text-gradient fw-bolder fade-in-2s">
             The Main Title<br></br>for the Web
           </h1>
-          <h2 className="mt-4 fs-4 text-secondary">
+          <h2 className="mt-4 fs-4 text-secondary fade-in-3s">
             The subtitle for the main title
           </h2>
-          <div className="mt-5">
+          <div className="mt-5 fade-in-4s">
             <Button
               className="me-2 purple-gradient-button"
               as={Link}
@@ -28,7 +31,7 @@ export default function Home() {
             <Button className="ms-2 outline-home-button">Button 2</Button>
           </div>
           <div className="relative">
-            <i className="bi bi-browser-edge larger-icon d-inline-block relative z2"></i>
+            <i className="bi bi-browser-edge larger-icon d-inline-block relative z2 fade-in-6s"></i>
             <div className="animate-laser1"></div>
             <div className="animate-laser2"></div>
             <div className="animate-laser3"></div>
@@ -220,22 +223,22 @@ export default function Home() {
         </Col>
       </Row>
       <Row className="mb-4">
-        <Col className="text-light d-flex move-left justify-content-center">
+        <Col className="text-light d-flex move-left justify-content-center overflow-visible">
           <i className="bi bi-browser-edge text-black rounded icon-custom-border-styling me-4"></i>
-          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4 red-shadow-on-hover"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4 red-shadow-on-hover"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4 red-shadow-on-hover"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4 red-shadow-on-hover"></i>
           <i className="bi bi-browser-edge text-black rounded icon-custom-border-styling"></i>
         </Col>
       </Row>
       <Row>
-        <Col className="text-light d-flex move-right justify-content-center">
+        <Col className="text-light d-flex move-right justify-content-center overflow-visible">
           <i className="bi bi-browser-edge text-black rounded icon-custom-border-styling me-4"></i>
-          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
-          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4 red-shadow-on-hover"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4 red-shadow-on-hover"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4 red-shadow-on-hover"></i>
+          <i className="bi bi-browser-edge rounded icon-custom-border-styling me-4 red-shadow-on-hover"></i>
           <i className="bi bi-browser-edge text-black rounded icon-custom-border-styling"></i>
         </Col>
       </Row>
